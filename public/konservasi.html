@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konservasi Biota Laut - Pesona Biota Laut</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f3ff;
+            color: #333;
+        }
+        header {
+            background-color: #005c99;
+            color: #fff;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #005c99;
+        }
+        .conservation-section {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .conservation-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #e65c00;
+        }
+        .conservation-tips {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .conservation-tips li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .conservation-tips li::before {
+            content: '🌊';
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="jenisbiota.html">Jenis Biota</a></li>
+                <li><a href="konservasi.html">Konservasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Konservasi Biota Laut Indonesia</h1>
+        <p>Indonesia memiliki kekayaan biota laut yang luar biasa, namun juga menghadapi berbagai ancaman. Mari kita pelajari tentang upaya konservasi dan bagaimana kita bisa berkontribusi.</p>
+        
+        <div class="conservation-section">
+            <h2>Mengapa Konservasi Penting?</h2>
+            <img src="konservas.jpg" alt="Ekosistem terumbu karang yang sehat" class="conservation-image">
+            <p>Konservasi biota laut penting untuk menjaga keseimbangan ekosistem, melindungi keanekaragaman hayati, dan menjamin keberlanjutan sumber daya laut untuk generasi mendatang. Biota laut juga berperan penting dalam menjaga kesehatan planet kita.</p>
+        </div>
+
+        <div class="conservation-section">
+            <h2>Upaya Konservasi di Indonesia</h2>
+            <ul>
+                <li>Pembentukan Kawasan Konservasi Perairan (KKP)</li>
+                <li>Program rehabilitasi terumbu karang</li>
+                <li>Perlindungan spesies langka dan terancam punah</li>
+                <li>Edukasi masyarakat tentang pentingnya menjaga ekosistem laut</li>
+                <li>Pengembangan ekowisata bawah laut yang berkelanjutan</li>
+            </ul>
+        </div>
+
+        <div class="conservation-section">
+            <h2>Apa yang Bisa Anda Lakukan?</h2>
+            <ul class="conservation-tips">
+                <li>Kurangi penggunaan plastik sekali pakai</li>
+                <li>Pilih produk seafood yang berkelanjutan</li>
+                <li>Jangan membeli souvenir yang terbuat dari biota laut</li>
+                <li>Praktikkan snorkeling dan diving yang bertanggung jawab</li>
+                <li>Dukung organisasi konservasi laut</li>
+            </ul>
+        </div>
+
+        <a href="#" class="cta-button" id="volunteer-btn">Bergabung sebagai Relawan</a>
+    </main>
+    <script>
+        document.getElementById('volunteer-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Terima kasih atas minat Anda! Kami akan segera menghubungi Anda dengan informasi lebih lanjut tentang program relawan kami.');
+        });
+    </script>
+</body>
+</html>

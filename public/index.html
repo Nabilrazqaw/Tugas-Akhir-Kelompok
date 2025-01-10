@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesona Biota Laut</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f3ff;
+            color: #333;
+        }
+        header {
+            background-color: #005c99;
+            color: #fff;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #005c99;
+        }
+        .ocean-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="jenisbiota.html">Jenis Biota</a></li>
+                <li><a href="konservasi.html">Konservasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Selamat Datang di Pesona Biota Laut</h1>
+        <img src="bawahlaut.jpg" alt="Pemandangan bawah laut yang indah" class="ocean-image">
+        <p>Jelajahi keindahan dan keajaiban dunia bawah laut Indonesia! Dari terumbu karang yang memukau hingga ikan-ikan tropis yang berwarna-warni, biota laut Indonesia menyimpan keindahan yang tak terbatas.</p>
+        <p>Mari bersama-sama kita pelajari, lindungi, dan lestarikan kekayaan laut kita untuk generasi mendatang.</p>
+        <a href="#jenis-biota" class="cta-button">Jelajahi Biota Laut</a>
+    </main>
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Anda akan menjelajahi keindahan biota laut Indonesia!');
+        });
+    </script>
+</body>
+</html>

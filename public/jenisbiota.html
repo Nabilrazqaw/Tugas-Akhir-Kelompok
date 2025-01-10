@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenis Biota Laut Indonesia - Pesona Biota Laut</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f3ff;
+            color: #333;
+        }
+        header {
+            background-color: #005c99;
+            color: #fff;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            color: #005c99;
+        }
+        .biota-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        .biota-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .biota-card:hover {
+            transform: translateY(-5px);
+        }
+        .biota-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .biota-card-content {
+            padding: 1rem;
+        }
+        .biota-card h3 {
+            margin-top: 0;
+            color: #005c99;
+        }
+        .biota-card p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="jenisbiota.html">Jenis Biota</a></li>
+                <li><a href="konservasi.html">Konservasi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Jenis Biota Laut Indonesia</h1>
+        <p>Indonesia memiliki keanekaragaman hayati laut yang luar biasa. Berikut adalah beberapa jenis biota laut yang dapat Anda temukan di perairan Indonesia:</p>
+        
+        <div class="biota-grid">
+            <div class="biota-card">
+                <img src="terumbukarang.jpg" alt="Terumbu Karang">
+                <div class="biota-card-content">
+                    <h3>Terumbu Karang</h3>
+                    <p>Ekosistem yang kaya dan beragam, menjadi rumah bagi berbagai spesies ikan dan invertebrata laut.</p>
+                </div>
+            </div>
+            <div class="biota-card">
+                <img src="ikanbadut.jpeg" alt="Ikan Nemo">
+                <div class="biota-card-content">
+                    <h3>Ikan Badut (Nemo)</h3>
+                    <p>Ikan kecil berwarna oranye dengan garis putih, terkenal karena hubungan simbiosisnya dengan anemon laut.</p>
+                </div>
+            </div>
+            <div class="biota-card">
+                <img src="hiu paus.jpeg" alt="Hiu Paus">
+                <div class="biota-card-content">
+                    <h3>Hiu Paus</h3>
+                    <p>Ikan terbesar di dunia yang sering ditemui di perairan Indonesia, terutama di Taman Nasional Teluk Cenderawasih.</p>
+                </div>
+            </div>
+            <div class="biota-card">
+                <img src="kudalautpikmi.jpeg" alt="Kuda Laut Pygmy">
+                <div class="biota-card-content">
+                    <h3>Kuda Laut Pygmy</h3>
+                    <p>Salah satu spesies kuda laut terkecil di dunia, sering ditemukan di perairan Indonesia bagian timur.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        document.querySelectorAll('.biota-card').forEach(card => {
+            card.addEventListener('click', function() {
+                alert(`Anda memilih ${this.querySelector('h3').textContent}. Mari kita pelajari lebih lanjut tentang biota laut yang menakjubkan ini!`);
+            });
+        });
+    </script>
+</body>
+</html>
